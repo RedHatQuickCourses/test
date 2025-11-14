@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Creating user accounts :: Access Management</title>
+    <link rel="prev" href="user-creation.html">
+    <link rel="next" href="user-account-management.html">
+    <meta name="generator" content="Antora 3.1.3">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../../..">Access Management</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/REPLACEREPONAME/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="test" data-version="1.0.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Access Management</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../LABENV/index.html">Lab Environment</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../role-based-access-control-rbac/role-based-access-control-rbac.html">Role-Based Access Control (RBAC)</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../role-based-access-control-rbac/understanding-rbac-principles.html">Understanding RBAC principles</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../role-based-access-control-rbac/implementing-rbac-in-systems.html">Implementing RBAC in systems</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../role-based-access-control-rbac/defining-roles-and-permissions.html">Defining roles and permissions</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="user-creation.html">User Creation</a>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="creating-user-accounts.html">Creating user accounts</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="user-account-management.html">User account management</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="user-authentication-methods.html">User authentication methods</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../granting-access/granting-access.html">Granting Access</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../granting-access/assigning-roles-to-users.html">Assigning roles to users</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../granting-access/granting-specific-permissions.html">Granting specific permissions</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../granting-access/access-review-and-approval-processes.html">Access review and approval processes</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../available-configuration/available-configuration.html">Available Configuration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../available-configuration/understanding-access-control-settings.html">Understanding access control settings</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../available-configuration/configuring-access-policies.html">Configuring access policies</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../available-configuration/managing-access-control-lists.html">Managing access control lists</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../troubleshooting/troubleshooting.html">Troubleshooting</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../troubleshooting/identifying-access-issues.html">Identifying access issues</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../troubleshooting/diagnosing-and-resolving-access-problems.html">Diagnosing and resolving access problems</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../troubleshooting/best-practices-for-access-management-troubleshooting.html">Best practices for access management troubleshooting</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../appendix/appendix.html">Appendix</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Access Management</span>
+    <span class="version">1.0.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Access Management</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Access Management</a></li>
+    <li><a href="user-creation.html">User Creation</a></li>
+    <li><a href="creating-user-accounts.html">Creating user accounts</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Creating user accounts</h1>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">== Creating User Accounts
+
+Creating user accounts is a fundamental aspect of access management, enabling organizations to control who has access to their systems and resources. This section will guide you through the process of creating user accounts, managing them effectively, and understanding various authentication methods.
+
+=== Creating User Accounts
+
+1. **Access the User Management Interface**
+   Begin by logging into your system with an administrative account. Navigate to the user management section, which is typically found in the system settings or control panel.
+
+2. **Initiate User Creation**
+   Look for an option to create a new user account, often labeled as "Add User," "New User," or similar. Clicking on this option will prompt you to enter the necessary details for the new account.
+
+3. **Enter User Details**
+   Fill in the required fields, which usually include:
+   - **Username**: A unique identifier for the user.
+   - **Password**: Initial password for the user (ensure it meets complexity requirements).
+   - **Full Name**: The user's legal name.
+   - **Email Address**: For communication and password recovery.
+   - **Contact Information**: Additional details like phone number or department.
+
+4. **Assign Initial Role**
+   Select an appropriate role for the new user from the available roles in your system. This step is crucial as it determines the permissions the user will initially have.
+
+5. **Review and Confirm**
+   Double-check all the entered information for accuracy. Once confirmed, submit the form to create the user account.
+
+6. **Notify the User**
+   Inform the new user about their account details, especially their username and any temporary password if applicable. Encourage them to change their password upon their first login for security reasons.
+
+=== User Account Management
+
+Effective user account management involves ongoing tasks to ensure security and compliance:
+
+- **Regular Audits**: Periodically review user accounts to remove inactive or unnecessary accounts.
+- **Password Policies**: Enforce strong password policies, including regular password changes and complexity requirements.
+- **Multi-Factor Authentication (MFA)**: Implement MFA where possible to add an extra layer of security.
+- **Access Reviews**: Conduct regular access reviews to ensure users only have the permissions necessary for their roles.
+
+=== User Authentication Methods
+
+Understanding and implementing robust authentication methods is vital for securing user accounts:
+
+- **Password-based Authentication**: The most</code></pre>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="user-creation.html">User Creation</a></span>
+  <span class="next"><a href="user-account-management.html">User account management</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

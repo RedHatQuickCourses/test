@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>User authentication methods :: Access Management</title>
+    <link rel="prev" href="user-account-management.html">
+    <link rel="next" href="../granting-access/granting-access.html">
+    <meta name="generator" content="Antora 3.1.3">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../../..">Access Management</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/REPLACEREPONAME/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="test" data-version="1.0.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Access Management</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../LABENV/index.html">Lab Environment</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../role-based-access-control-rbac/role-based-access-control-rbac.html">Role-Based Access Control (RBAC)</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../role-based-access-control-rbac/understanding-rbac-principles.html">Understanding RBAC principles</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../role-based-access-control-rbac/implementing-rbac-in-systems.html">Implementing RBAC in systems</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../role-based-access-control-rbac/defining-roles-and-permissions.html">Defining roles and permissions</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="user-creation.html">User Creation</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="creating-user-accounts.html">Creating user accounts</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="user-account-management.html">User account management</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="user-authentication-methods.html">User authentication methods</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../granting-access/granting-access.html">Granting Access</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../granting-access/assigning-roles-to-users.html">Assigning roles to users</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../granting-access/granting-specific-permissions.html">Granting specific permissions</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../granting-access/access-review-and-approval-processes.html">Access review and approval processes</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../available-configuration/available-configuration.html">Available Configuration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../available-configuration/understanding-access-control-settings.html">Understanding access control settings</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../available-configuration/configuring-access-policies.html">Configuring access policies</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../available-configuration/managing-access-control-lists.html">Managing access control lists</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../troubleshooting/troubleshooting.html">Troubleshooting</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../troubleshooting/identifying-access-issues.html">Identifying access issues</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../troubleshooting/diagnosing-and-resolving-access-problems.html">Diagnosing and resolving access problems</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../troubleshooting/best-practices-for-access-management-troubleshooting.html">Best practices for access management troubleshooting</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../appendix/appendix.html">Appendix</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Access Management</span>
+    <span class="version">1.0.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Access Management</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Access Management</a></li>
+    <li><a href="user-creation.html">User Creation</a></li>
+    <li><a href="user-authentication-methods.html">User authentication methods</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">User authentication methods</h1>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">== User Authentication Methods
+
+User authentication is the process of verifying the identity of a user, device, or system before granting access to resources. It is a critical component of access management, ensuring that only authorized individuals can access sensitive data and systems. This section will cover various user authentication methods, their strengths, and weaknesses.
+
+**1. Password-based Authentication**
+
+Password-based authentication is the most common method, where users provide a username and a secret password to gain access.
+
+* **Strengths:**
+  - Simple to implement and understand.
+  - No additional hardware or software required.
+
+* **Weaknesses:**
+  - Users often choose weak or easily guessable passwords.
+  - Passwords can be stolen through phishing, keylogging, or brute-force attacks.
+
+* **Best Practices:**
+  - Enforce strong password policies (length, complexity, and regular changes).
+  - Implement multi-factor authentication (MFA) to add an extra layer of security.
+
+**2. Multi-Factor Authentication (MFA)**
+
+MFA requires users to provide two or more verification factors to gain access. These factors typically fall into three categories:
+
+* **Something the user knows** (password, PIN)
+* **Something the user has** (security token, smartphone)
+* **Something the user is** (biometrics, fingerprint)
+
+* **Strengths:**
+  - Significantly improves security by requiring multiple forms of verification.
+  - Reduces the risk of compromised credentials.
+
+* **Weaknesses:**
+  - Can be more complex for users to manage.
+  - Additional costs for hardware or software tokens.
+
+**3. Biometric Authentication**
+
+Biometric authentication uses unique biological characteristics, such as fingerprints, facial recognition, or iris scans, to verify identity.
+
+* **Strengths:**
+  - Highly secure, as biometric traits are unique to each individual.
+  - No need to remember passwords or carry additional tokens.
+
+* **Weaknesses:**
+  - Privacy concerns regarding the storage and use of biometric data.
+  - Potential for false negatives or positives.
+
+**4. Token-based Authentication**
+
+Token-based authentication involves the use of physical or software tokens that generate one-time passwords (OTP) or nonces.
+
+* **Strengths:**
+  - Provides</code></pre>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="user-account-management.html">User account management</a></span>
+  <span class="next"><a href="../granting-access/granting-access.html">Granting Access</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

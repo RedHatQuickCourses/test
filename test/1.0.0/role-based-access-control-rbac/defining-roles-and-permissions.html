@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Defining roles and permissions :: Access Management</title>
+    <link rel="prev" href="implementing-rbac-in-systems.html">
+    <link rel="next" href="../user-creation/user-creation.html">
+    <meta name="generator" content="Antora 3.1.3">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../../..">Access Management</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/REPLACEREPONAME/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="test" data-version="1.0.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Access Management</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../LABENV/index.html">Lab Environment</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="role-based-access-control-rbac.html">Role-Based Access Control (RBAC)</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="understanding-rbac-principles.html">Understanding RBAC principles</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="implementing-rbac-in-systems.html">Implementing RBAC in systems</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="defining-roles-and-permissions.html">Defining roles and permissions</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../user-creation/user-creation.html">User Creation</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../user-creation/creating-user-accounts.html">Creating user accounts</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../user-creation/user-account-management.html">User account management</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../user-creation/user-authentication-methods.html">User authentication methods</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../granting-access/granting-access.html">Granting Access</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../granting-access/assigning-roles-to-users.html">Assigning roles to users</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../granting-access/granting-specific-permissions.html">Granting specific permissions</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../granting-access/access-review-and-approval-processes.html">Access review and approval processes</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../available-configuration/available-configuration.html">Available Configuration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../available-configuration/understanding-access-control-settings.html">Understanding access control settings</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../available-configuration/configuring-access-policies.html">Configuring access policies</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../available-configuration/managing-access-control-lists.html">Managing access control lists</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../troubleshooting/troubleshooting.html">Troubleshooting</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../troubleshooting/identifying-access-issues.html">Identifying access issues</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../troubleshooting/diagnosing-and-resolving-access-problems.html">Diagnosing and resolving access problems</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../troubleshooting/best-practices-for-access-management-troubleshooting.html">Best practices for access management troubleshooting</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../appendix/appendix.html">Appendix</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Access Management</span>
+    <span class="version">1.0.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Access Management</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Access Management</a></li>
+    <li><a href="role-based-access-control-rbac.html">Role-Based Access Control (RBAC)</a></li>
+    <li><a href="defining-roles-and-permissions.html">Defining roles and permissions</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Defining roles and permissions</h1>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">== Defining Roles and Permissions
+
+In the context of Role-Based Access Control (RBAC), defining roles and permissions is a crucial step in establishing a secure and efficient access management system. This section will guide you through the process of creating roles and assigning permissions to ensure that users have the appropriate level of access to system resources.
+
+### Understanding Roles
+
+Roles represent job functions within an organization. By defining roles, you create a framework that simplifies the process of assigning access rights to users. Common roles include:
+
+- **Administrator**: Full access to manage the system and its users.
+- **Manager**: Access to view and manage specific subsets of data.
+- **Employee**: Limited access to perform job-specific tasks.
+- **Guest**: Read-only access for external users or general information seekers.
+
+### Defining Permissions
+
+Permissions are the specific actions or operations that users can perform within the system. These can include:
+
+- **Read**: View or access information.
+- **Write**: Modify or create new information.
+- **Execute**: Run applications or scripts.
+- **Delete**: Remove information or objects.
+
+When defining permissions, consider the principle of least privilege (PoLP), which states that users should only have the minimum levels of access necessary to perform their job functions.
+
+### Assigning Roles and Permissions
+
+1. **Identify Roles**: Begin by identifying the roles required for your organization. Consider job functions, responsibilities, and the need for segregation of duties.
+
+2. **Define Permissions**: Next, determine the necessary permissions for each role. Align these permissions with the job functions and ensure they adhere to the PoLP.
+
+3. **Create Roles**: In your access management system, create roles and assign the defined permissions to each role. This step may vary depending on the specific system you are using (e.g., LDAP, Active Directory, or a custom solution).
+
+4. **Assign Users to Roles**: Once roles are created, assign users to the appropriate roles based on their job functions. This action grants them the associated permissions.
+
+5. **Review and Update**: Regularly review roles and permissions to ensure they remain relevant and appropriate. Update roles and permissions as job functions change or new threats emerge.
+
+### Hands-On Activity: Defining Roles and Permissions
+
+To solidify your understanding, let's walk</code></pre>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="implementing-rbac-in-systems.html">Implementing RBAC in systems</a></span>
+  <span class="next"><a href="../user-creation/user-creation.html">User Creation</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Managing access control lists :: Access Management</title>
+    <link rel="prev" href="configuring-access-policies.html">
+    <link rel="next" href="../troubleshooting/troubleshooting.html">
+    <meta name="generator" content="Antora 3.1.3">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../../..">Access Management</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/REPLACEREPONAME/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="test" data-version="1.0.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Access Management</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../LABENV/index.html">Lab Environment</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../role-based-access-control-rbac/role-based-access-control-rbac.html">Role-Based Access Control (RBAC)</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../role-based-access-control-rbac/understanding-rbac-principles.html">Understanding RBAC principles</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../role-based-access-control-rbac/implementing-rbac-in-systems.html">Implementing RBAC in systems</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../role-based-access-control-rbac/defining-roles-and-permissions.html">Defining roles and permissions</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../user-creation/user-creation.html">User Creation</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../user-creation/creating-user-accounts.html">Creating user accounts</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../user-creation/user-account-management.html">User account management</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../user-creation/user-authentication-methods.html">User authentication methods</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../granting-access/granting-access.html">Granting Access</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../granting-access/assigning-roles-to-users.html">Assigning roles to users</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../granting-access/granting-specific-permissions.html">Granting specific permissions</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../granting-access/access-review-and-approval-processes.html">Access review and approval processes</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="available-configuration.html">Available Configuration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="understanding-access-control-settings.html">Understanding access control settings</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="configuring-access-policies.html">Configuring access policies</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="managing-access-control-lists.html">Managing access control lists</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../troubleshooting/troubleshooting.html">Troubleshooting</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../troubleshooting/identifying-access-issues.html">Identifying access issues</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../troubleshooting/diagnosing-and-resolving-access-problems.html">Diagnosing and resolving access problems</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../troubleshooting/best-practices-for-access-management-troubleshooting.html">Best practices for access management troubleshooting</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../appendix/appendix.html">Appendix</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Access Management</span>
+    <span class="version">1.0.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Access Management</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Access Management</a></li>
+    <li><a href="available-configuration.html">Available Configuration</a></li>
+    <li><a href="managing-access-control-lists.html">Managing access control lists</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Managing access control lists</h1>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">= Managing Access Control Lists
+
+== Understanding Access Control Lists (ACLs)
+
+An Access Control List (ACL) is a list of permissions attached to an object, which specifies who or what is allowed to access that object and what actions are allowed to be performed on it. In the context of access management, ACLs are crucial for defining fine-grained access control.
+
+== Importance of ACL Management
+
+Proper management of ACLs is essential for maintaining a secure and efficient system. Misconfigurations can lead to unauthorized access or denial of legitimate access, which can have severe consequences. Therefore, understanding how to manage ACLs effectively is a critical skill in access management.
+
+== Configuring Access Control Lists
+
+Configuring ACLs involves several steps:
+
+1. **Identify the Object**: Determine the resource for which you want to configure ACLs. This could be a file, directory, network interface, or any other system object.
+
+2. **Define Users or Groups**: Identify the users or groups that need access to the object. This could be individual users, predefined system groups, or even external groups.
+
+3. **Specify Permissions**: Decide what level of access each user or group should have. Common permissions include read, write, execute, and delete. More complex systems may offer a broader range of permissions.
+
+4. **Apply ACLs**: Use the system's tools or commands to apply the defined permissions to the object. This step varies depending on the operating system or platform in use.
+
+== Managing ACLs
+
+Managing ACLs involves ongoing maintenance to ensure they remain accurate and effective:
+
+1. **Regular Reviews**: Periodically review ACLs to ensure they still meet the needs of the users and the system. This includes checking for any unnecessary permissions that could pose a security risk.
+
+2. **Update User Information**: As users change roles or leave the organization, update their ACL entries accordingly. This might involve removing access or reassigning it to a new role.
+
+3. **Auditing**: Regularly audit ACLs to detect any anomalies or unauthorized changes. This practice is crucial for maintaining system integrity and security.
+
+4. **Use of Tools**: Leverage access management tools that provide centralized ACL management. These tools can simplify the process, reduce errors, and offer better visibility into who has access</code></pre>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="configuring-access-policies.html">Configuring access policies</a></span>
+  <span class="next"><a href="../troubleshooting/troubleshooting.html">Troubleshooting</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
