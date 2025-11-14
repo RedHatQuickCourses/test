@@ -1,0 +1,42 @@
+#  Defining roles and permissions
+
+```
+== Defining Roles and Permissions
+
+In the context of Role-Based Access Control (RBAC), defining roles and permissions is a crucial step in establishing a secure and efficient access management system. This section will guide you through the process of creating roles and assigning permissions to ensure that users have the appropriate level of access to system resources.
+
+### Understanding Roles
+
+Roles represent job functions within an organization. By defining roles, you create a framework that simplifies the process of assigning access rights to users. Common roles include:
+
+- **Administrator**: Full access to manage the system and its users.
+- **Manager**: Access to view and manage specific subsets of data.
+- **Employee**: Limited access to perform job-specific tasks.
+- **Guest**: Read-only access for external users or general information seekers.
+
+### Defining Permissions
+
+Permissions are the specific actions or operations that users can perform within the system. These can include:
+
+- **Read**: View or access information.
+- **Write**: Modify or create new information.
+- **Execute**: Run applications or scripts.
+- **Delete**: Remove information or objects.
+
+When defining permissions, consider the principle of least privilege (PoLP), which states that users should only have the minimum levels of access necessary to perform their job functions.
+
+### Assigning Roles and Permissions
+
+1. **Identify Roles**: Begin by identifying the roles required for your organization. Consider job functions, responsibilities, and the need for segregation of duties.
+
+2. **Define Permissions**: Next, determine the necessary permissions for each role. Align these permissions with the job functions and ensure they adhere to the PoLP.
+
+3. **Create Roles**: In your access management system, create roles and assign the defined permissions to each role. This step may vary depending on the specific system you are using (e.g., LDAP, Active Directory, or a custom solution).
+
+4. **Assign Users to Roles**: Once roles are created, assign users to the appropriate roles based on their job functions. This action grants them the associated permissions.
+
+5. **Review and Update**: Regularly review roles and permissions to ensure they remain relevant and appropriate. Update roles and permissions as job functions change or new threats emerge.
+
+### Hands-On Activity: Defining Roles and Permissions
+
+To solidify your understanding, let's walk

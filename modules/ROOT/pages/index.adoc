@@ -1,22 +1,29 @@
-= An Example Quick Course
+=  Access Management
 :navtitle: Home
 
 == Introduction
 
-Course Title: Course title FIXME
+Course Title:  Access Management
 
 Description:
 Course description FIXME
 
 Duration: FIXME hours
 
-== Objectives
+== Topics covered in this course
 
-On completing this course, you should be able to:
 
-* Observable, measurable objective...
-* Observable, measurable objective...
-* Observable, measurable objective...
+*  Role-Based Access Control (RBAC)
+
+*  User Creation
+
+*  Granting Access
+
+*  Available Configuration
+
+*  Troubleshooting
+
+
 
 == Prerequisites
 

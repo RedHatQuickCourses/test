@@ -1,0 +1,40 @@
+#  Understanding RBAC principles
+
+```
+= Understanding Role-Based Access Control (RBAC) Principles
+
+Role-Based Access Control (RBAC) is a widely adopted approach to regulate user access to computer systems and resources. It simplifies administration and enhances security by assigning permissions to roles, and then assigning those roles to users. Here, we'll delve into the core principles of RBAC.
+
+== RBAC Fundamentals
+
+RBAC revolves around three fundamental concepts:
+
+* **Roles**: These are job functions within an organization. Examples include 'Administrator', 'Manager', 'Employee', etc. Each role is associated with a set of permissions that define what actions users in that role can perform.
+
+* **Permissions**: These are specific rights or privileges that allow users to perform actions on resources. Permissions can range from reading files to modifying databases.
+
+* **Users**: These are individuals who interact with the system. Each user is assigned one or more roles, thereby inheriting the permissions associated with those roles.
+
+== Key Principles of RBAC
+
+1. **Role Assignment**: Users are assigned roles based on their job responsibilities. This separation ensures that users only have access to the resources necessary for their job functions.
+
+2. **Permission Assignment**: Permissions are associated with roles, not individual users. This principle, known as role licensing, simplifies permission management.
+
+3. **Hierarchical Roles**: RBAC systems often support hierarchical role structures. A senior role, like 'Team Lead', can inherit all permissions of a junior role, like 'Employee', plus additional administrative permissions.
+
+4. **Dynamic Role Changes**: RBAC allows for dynamic role assignments. A user's role can change over time based on their evolving job responsibilities or project requirements.
+
+== Advantages of RBAC
+
+* **Simplified Administration**: By grouping permissions into roles, administrators can manage access more efficiently.
+
+* **Improved Security**: RBAC minimizes the risk of unauthorized access by ensuring users only have permissions relevant to their roles.
+
+* **Compliance**: RBAC supports regulatory compliance by providing an audit trail of who has access to what resources.
+
+== Practical Activity: Identifying Roles and Permissions
+
+To understand RBAC better, let's conduct a practical activity:
+
+1. **Identify Job Functions**: List the primary job functions within your organization or a hypot

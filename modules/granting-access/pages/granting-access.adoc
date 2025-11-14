@@ -1,0 +1,12 @@
+#  Granting Access
+
+**Granting Access**
+
+Granting Access involves the process of assigning roles to users and granting specific permissions to ensure they have appropriate access to system resources. This includes understanding the access control settings and configuring access policies to manage access control lists effectively. Key aspects include:
+
+- Assigning roles to users based on their responsibilities and job functions.
+- Granting specific permissions to allow users to perform their tasks.
+- Implementing access review and approval processes to maintain security and compliance.
+- Regularly updating access rights as job roles or responsibilities change.
+- Ensuring least privilege access principle, providing users the minimum levels of access necessary to complete their job functions.
+- Monitoring and auditing access rights to detect and correct any inappropriate access.

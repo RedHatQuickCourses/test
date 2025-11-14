@@ -1,0 +1,9 @@
+#  Role-Based Access Control (RBAC)
+
+Role-Based Access Control (RBAC) is a widely adopted approach to regulate access within a system. It simplifies administration and enhances security by assigning permissions to roles, which are then assigned to users.
+
+- **Understanding RBAC principles**: RBAC operates on the concept of roles, where permissions are grouped and assigned to specific roles. Users are then assigned the appropriate roles based on their job functions.
+
+- **Implementing RBAC in systems**: This involves integrating RBAC into existing system architectures, which may require changes to the database schema, application code, and user interface.
+
+- **Defining roles and permissions**: Roles represent job functions, and permissions are the actions that can be performed. For instance, a 'Manager' role might have permissions to 'Create', 'Edit', and 'Delete' users, while an 'Employee' role might only have 'View' permission.
